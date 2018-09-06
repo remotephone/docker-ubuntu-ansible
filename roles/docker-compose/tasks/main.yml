@@ -6,9 +6,10 @@
     state: present
   with_items:
     - python-setuptools
+    - python-pip
 
 - name: Installing dependencies
-  easy_install:
+  pip:
     name: "{{ docker_compose_pip_version }}"
 
 - name: Installing docker compose

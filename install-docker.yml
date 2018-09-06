@@ -3,7 +3,7 @@
   gather_facts: no
   become: yes
   roles:
-#    - bootstrap
-#    - docker-ce
-#    - docker-compose
-    - docker-swarm
+    - bootstrap
+    - docker-ce
+    - docker-compose
+#    - docker-swarm
